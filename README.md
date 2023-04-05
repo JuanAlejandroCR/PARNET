@@ -1,13 +1,19 @@
-## Proyecto PARNET
+# Proyecto PARNET
+Repositorio para el Proyecto final PARNET
 
-# instalar composer
----------------------------
-composer install
------------------------------
+## Instalacion
+La instalacion requiere composer como dependencia.
+- Descarga las librerias y dependecias necesarias para el proyecto.
 
-# Iniciar servidor
-----------------------------
-php artisan serve
+ ```sh
+    composer install
+```
+
+Iniciar el servidor
+ ```sh
+    php artisan serve
+```
+
 ----------------------------
 
 
