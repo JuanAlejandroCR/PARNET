@@ -9,6 +9,28 @@ La instalacion requiere composer como dependencia.
     composer install
 ```
 
+```
+
+Correr migraciones
+ ```sh
+    php artisan migrate
+```
+
+Para las imagenes
+ ```sh
+    php artisan storage:link
+```
+
+Crendenciales
+ ```sh
+    php artisan key:generate
+```
+
+Registros de las migraciones
+ ```sh
+    php artisan db:seed
+```
+
 Iniciar el servidor
  ```sh
     php artisan serve
