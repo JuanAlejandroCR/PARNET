@@ -9,8 +9,6 @@ La instalacion requiere composer como dependencia.
     composer install
 ```
 
-```
-
 Correr migraciones
  ```sh
     php artisan migrate
