@@ -24,7 +24,7 @@ body {
 
 .titulos {
     border-radius: 0 15px 15px 0;
-    background-image: linear-gradient(0deg, #6599cb 0%, #336599 100%);
+    background-image: linear-gradient(0deg, #6599cb 0%, #1364bb 100%);
     text-decoration: none !important;
     font-size: 16px !important;
     color: #000;
@@ -44,7 +44,7 @@ body {
 }
 
 .control-panel {
-    background-image: linear-gradient(0deg, #405c96 0%, #6385c9 100%);
+    background-image: linear-gradient(0deg, #1364bb 0%, #6385c9 100%);
     margin: 0px 10px;
     padding: 0px !important;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .menu-tabs {
-    background-image: linear-gradient(0deg, #063070 0%, #044382 100%);
+    background-image: linear-gradient(0deg, #1364bb 0%, #044382 100%);
     /* font-size: 14px; */
     font-size: 10px;
     color: #b5c6df !important;
@@ -72,11 +72,11 @@ body {
 }
 
 .bg-blue {
-    background-color: #063070 !important;
+    background-color: #1364bb !important;
 }
 
 .footer {
-    background-image: linear-gradient(0deg, #7d9dc7 0%, #01317d 100%);
+    background-image: linear-gradient(0deg, #7d9dc7 0%, #1364bb 100%);
     height: 70px;
 
 }
@@ -101,13 +101,13 @@ body {
 }
 
 .noticias {
-    background-color: #3468A9;
+    background-color: #1364bb;
     padding: 14px;
 }
 
 .p-noticias {
     font-size: 27px;
-    color: #244088;
+    color: #1364bb;
     font-family: "Impact";
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 .areas2 {
-    background-image: linear-gradient(0deg, #405c96 0%, #6385c9 100%);
+    background-image: linear-gradient(0deg, #1364bb 0%, #6385c9 100%);
     /* margin: 10px; */
     font-size: 20px;
     color: #ffffff;
