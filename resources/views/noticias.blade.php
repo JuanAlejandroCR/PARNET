@@ -7,7 +7,7 @@
                 <th>Titulo</th>
                 <th>Detalle</th>
             </thead>
-            <tbody>
+            <tbody><!--
                 @foreach ($news as $n)
                     @if ($n->active == 1)
                         <tr>
@@ -15,7 +15,7 @@
                             <td>{{ $n->description }}</td>
                         </tr>
                     @endif
-                @endforeach
+                @endforeach-->
             </tbody>
         </table>
 

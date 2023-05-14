@@ -39,19 +39,8 @@
                                 class="p-noticias ms-2 me-2">Noticias</span><img
                                 src="{{ asset('assets/mapa-mundo_left.png') }}" alt="mundo">
                         </li>
-                        @foreach ($news as $n)
-                            @if ($n->active == 1)
-                                <li class="p-3 bg-blue" style="line-height: 12px;">
-                                    <span class="mensaje" style="font-style:italic;"><span
-                                            style="font-size: 11px; font-weight: bold;">{{ $n->title }}</span><br><span
-                                            style="font-size: 10px;">{{ substr($n->description, 0, 25) }}.<a
-                                                href="{{ route('noticias') }}"
-                                                style="background-color: transparent; cursor: pointer; display: inline;">[Leer
-                                                más...]</a></span></span>
-                                </li>
-                            @endif
-                        @endforeach
-
+                        <!--@fore
+                            -->
                         <li class="mt-3">
                             <a href="#" class="control-panel d-flex align-items-center justify-content-center"><span
                                     class="p-control">Control Panel Parnet</span></a>
@@ -125,7 +114,7 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="nav navbar-nav ml-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link menu-tabs me-2" aria-current="page" href="{{ route('pagina-principal') }}">Página
+                                        <a class="nav-link menu-tabs me-2" aria-current="page" href="{{ route('principal') }}">Página
                                             principal</a>
                                     </li>
                                     <li class="nav-item">
@@ -175,10 +164,10 @@
 
                         <img src="{{ asset('assets/PARNET_LOGO3_blanco.png') }}" alt="logo"
                             class="d-none d-md-inline me-4" width="98px">
-                        <a class="btn btn-sm ms-md-5 p-control border-end d-none d-md-inline " href="{{ route('pagina-principal') }}"
+                        <a class="btn btn-sm ms-md-5 p-control border-end d-none d-md-inline " href="{{ route('principal') }}"
                             role="button">Página
                             principal</a>
-                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('pagina-principal') }}"
+                        <a class="btn btn-sm ms-md-5 d-inline d-md-none btn-link btn-floating" href="{{ route('principal') }}"
                             role="button"><i class="fas fa-home"></i></a>
                         <a class="btn btn-sm  p-control border-end d-none d-md-inline" href="{{ route('quienes_somos') }}"
                             role="button">¿Quiénes
