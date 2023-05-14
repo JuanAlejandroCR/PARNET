@@ -4,48 +4,52 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Home extends Controller
+use App\Models\Field;
+use App\Models\Noticias;
+use App\Models\Productos;
+
+class HomeController extends Controller
 {
 
     public function index() {
-        $news = News::all();
+        $news = Noticias::all();
         return view('index', compact('news'));
     }
 
     public function certificaciones() {
-        $news = News::all();
+        $news = Noticias::all();
         return view('certificaciones', compact('news'));
     }
 
     public function productos() {
-        $productos = Product::all();
-        $news = News::all();
+        $productos = Productos::all();
+        $news = Noticias::all();
         return view('navbar.productos', compact('productos', 'news'));
     }
 
     public function contactanos() {
-        $news = News::all();
+        $news = Noticias::all();
         return view('navbar.contactanos', compact('news'));
     }
 
     public function servicios() {
         $fields = Field::all();
-        $news = News::all();
+        $news = Noticias::all();
         return view('navbar.servicios', compact('fields', 'news'));
     }
 
     public function noticias() {
-        $news = News::all();
+        $news = Noticias::all();
         return view('noticias', compact('news'));
     }
 
     public function clientes() {
-        $news = News::all();
+        $news = Noticias::all();
         return view('clientes', compact('news'));
     }
 
     public function quienes_somos() {
-        $news = News::all();
+        $news = Noticias::all();
         return view('quienes_somos', compact('news'));
     }
 
