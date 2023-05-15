@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 //rutas del controlador home
 
-Route::get('/', [HomeController::class, 'index'])->name('pagina-principal');
+Route::get('/', [HomeController::class, 'index'])->name('principal');
 Route::get('/clientes', [HomeController::class, 'clientes'])->name('clientes');
 Route::get('/quienes_somos', [HomeController::class, 'quienes_somos'])->name('quienes_somos');
 Route::get('/productos_publico', [HomeController::class, 'productos'])->name('productos');
@@ -71,11 +71,5 @@ Route::get('/graficas', [GraphController::class, 'index'])->name('graphs');
 Route::get('/solicitudes_servicios_listar', [ServiceRequestController::class, 'getServicesRequests'])->name('services_requests.get');
 Route::resource('/solicitudes_servicios', ServiceRequestController::class);
 
-
 //ruta del controlador contacto
 Route::resource('/contacto', ContactoController::class);
-
-
-Route::get('/inicio', function () {
-    return view('inicio.index');
-});
