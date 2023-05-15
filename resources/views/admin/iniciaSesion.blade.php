@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base')
 @section('title', 'login')
 @section('body')
     <section class="h-100">

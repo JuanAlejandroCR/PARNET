@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base')
 @section('title', 'Agregar sugerencia')
 @section('body')
     @include('solicitudesServicio.form');
