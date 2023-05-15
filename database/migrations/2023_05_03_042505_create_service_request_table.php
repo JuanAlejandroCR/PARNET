@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('service_request', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('field_id')->references('id')->on('fields');
+            $table->string('mail');
+            $table->string('description');
             $table->timestamps();
         });
     }
