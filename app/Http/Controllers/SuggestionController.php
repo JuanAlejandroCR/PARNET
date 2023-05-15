@@ -21,8 +21,8 @@ class SuggestionController extends Controller
 
     public function create()
     {
-        $news = Noticias::all();
-        return view('sugerencias.create', compact('news'));
+        $noticias = Noticias::all();
+        return view('sugerencias.create', compact('noticias'));
     }
 
     public function store(Request $request)
