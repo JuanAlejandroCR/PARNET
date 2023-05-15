@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Servicios extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
+
+    public function field() {
+        return $this->belongsTo(Field::class)->withTrashed();
+    }
 }
