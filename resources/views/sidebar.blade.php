@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base')
 @section('title', 'sidebar')
 
 @section('body')
@@ -79,16 +79,22 @@
                         <li class="px-3 mt-3 bg-blue">
                             <img src="{{ asset('assets/img_conect.png') }}" alt="conectados"><span
                                 class="mensaje ms-2 me-2"
-                                style="font-size: 10px; font-style:italic; color:#9999cc;">Conectados:</span>
+                                style="font-size: 10px; font-style:italic; color:white; font-size:15px;">Conectados:</span>
 
                         </li>
                         <li class="px-3 bg-blue">
-                            <img src="{{ asset('assets/img_visitas.png') }}" alt="visitas"><span class="mensaje ms-2 me-2"
-                                style="font-size: 10px; font-style:italic; color:#9999cc;">Visitas:</span>
-
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <img src="{{ asset('assets/img_visitas.png') }}" alt="visitas"><span class="mensaje ms-2 me-2"
+                                style="font-size: 10px; font-style:italic; color:white; font-size:15px;">Visitas:</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <input type="text" value="1" style="border: none; background:transparent; color:white;" disabled>
+                                </div>
+                            </div>
                         </li>
                         <li class="px-3 bg-blue mb-3  text-center">
-                            <span class="p-contol ms-2 me-2" style="font-size: 10px; font-style:italic;">Copyright
+                            <span class="p-contol ms-2 me-2" style="font-size: 10px; font-style:italic;">© Copyright
                                 2012</span>
                         </li>
                     </ul>

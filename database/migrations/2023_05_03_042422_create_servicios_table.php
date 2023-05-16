@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('servicios', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('field_id')->references('id')->on('fields');
+            $table->string('service');
             $table->timestamps();
         });
     }

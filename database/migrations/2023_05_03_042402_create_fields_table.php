@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('fields', function (Blueprint $table) {
             $table->id();
+            $table->string('field');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -9,7 +9,7 @@
 
     <div class="row mt-5">
         <div class="col-12">
-            <img src="{{ asset('') }}" class="img-fluid" style="height:138px;" alt="certificacion1">
+            <img src="{{ asset('assets/certificacion1.jpg') }}" class="img-fluid" style="height:138px;" alt="certificacion1">
         </div>
     </div>
 @endsection

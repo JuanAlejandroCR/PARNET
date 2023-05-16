@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Noticias;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
-class Graph extends Controller
+class GraphController extends Controller
 {
     public function index() {
-        $news = News::all();
-        return view('graficas.index', compact('news'));
+        $noticias = Noticias::all();
+        return view('graficas.index', compact('noticias'));
     }
 }
 

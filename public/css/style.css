@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     background: url("../assets/background.png");
     background-size: cover;
 
@@ -9,17 +10,19 @@ body {
 }
 
 .titulo1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Times New Roman', Times, serif;
     color: white;
+    font-weight: bold;
     font-style: italic;
-    font-size: 30px;
+    font-size: 2.5rem;
+    text-shadow: black 2px 2px 2px;
 }
 
 .titulo2 {
     font-size: 24px;
     color: #ffff3c;
     font-family: "Impact";
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: black 2px 2px 2px;
 }
 
 .titulos {
@@ -57,13 +60,19 @@ body {
 }
 
 .menu-tabs {
-    background-image: linear-gradient(0deg, #1364bb 0%, #044382 100%);
+    background-color: #063070;
     /* font-size: 14px; */
+    overflow: hidden;
     font-size: 10px;
     color: #b5c6df !important;
     font-weight: bold;
     font-family: "Verdana";
     font-style: italic;
+}
+
+.menu-tabs:hover{
+    background-color: black;
+    border-radius: 2px solid white;
 }
 
 .linea-mensajes {
@@ -107,7 +116,7 @@ body {
 
 .p-noticias {
     font-size: 27px;
-    color: #1364bb;
+    color: white;
     font-family: "Impact";
 }
 
@@ -187,6 +196,8 @@ a:focus {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
+    overflow: hidden;
+  
 }
 
 .navbar-btn {
@@ -249,7 +260,7 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: #7386D5;
-    background: #fff;
+    border: 2px solid black;
 }
 
 #sidebar ul li.active>a,
@@ -299,94 +310,6 @@ a.article:hover {
     color: #fff !important;
 }
 
-/* .wrapper {
-    display: flex;
-    width: 100% !important;
-}
-
-#sidebar {
-    width: 200px; */
-/* position: fixed; */
-/* position: static; */
-/* top: 220px; */
-/* top: 68px; */
-/* top: 84px; */
-/* left: 126px; */
-/* left: -12px; */
-/* height: calc(100% - 200px); */
-/* height: 100vh; */
-/* z-index: 999; */
-/* background: #063070;
-    color: #387686;
-    transition: all 0.3s; */
-/* padding: 10px; */
-/* }
-
-#sidebar.active {
-    margin-left: -326px;
-}
-
-#sidebar .sidebar-header { */
-/* padding: 20px; */
-/* background: #063070;
-} */
-
-/* #sidebar ul.components {
-     padding: 20px 0; 
-     border-bottom: 1px solid #47748b; 
-} */
-
-/* #sidebar ul p {
-    color: #063070;
-    padding: 10px;
-}
-
-#sidebar ul li a { */
-/* padding: 10px; */
-/* font-size: 1.1em; */
-/* display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #ffffff !important;
-    background: #25437e;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #3c707c;
-    background: #dde8eb;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #dde9e9;
-}
-
-a.download {
-    background: #fff;
-    /* color: #dde8eb; */
-/*}
-
-a.article,
-a.article:hover {
-    background: #dde9e9 !important;
-    color: #fff !important;
-} */
-
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -425,26 +348,6 @@ a.article:hover {
     list-style-image: url("../assets/ico_archive2.png");
 }
 
-/* .row>* {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-} */
-
-/* #content {
-    width: calc(100% - 452px); */
-/* width: calc(100% - 250px); */
-/* padding: 0px;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 220px;
-    right: 126px;
-}
-
-#content.active {
-    width: calc(100% - 250px);
-} */
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -480,29 +383,6 @@ a.article:hover {
 
         font-size: 20px;
     }
-
-    /* #sidebar {
-        margin-left: -326px;
-        top: 0px;
-    }
-
-    #sidebar.active {
-        margin-left: 12px;
-    }
-
-    #content {
-        width: 100%;
-        right: 0;
-        top: 170px;
-    }
-
-    #content.active {
-        width: calc(100% - 200px);
-    }
-
-    #sidebarCollapse span {
-        display: none;
-    } */
 
     #sidebar {
         margin-left: -200px;
