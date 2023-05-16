@@ -48,7 +48,7 @@ Route::post('/productos_editar', [ProductosController::class, 'update'])->name('
 Route::get('/producto_pdf/{id}', [ProductosController::class, 'pdf'])->name('producto_pdf.get');
 Route::get('/productos_reporte', [ProductosController::class, 'report'])->name('productos_reporte.get');
 Route::resource('/productos', ProductosController::class)->except('update');
-Route::get('/productos_listar', [ProductosController::class, 'getProducts'])->name('products.get');
+Route::get('/productos_listar', [ProductosController::class, 'getProducts'])->name('productos.get');
 
 //rutas del controlador field
 Route::get('/areas_listar', [FieldController::class, 'getFields'])->name('fields.get');

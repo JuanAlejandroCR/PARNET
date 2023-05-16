@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => productsTable());
 
 const productsTable = async () => {
     productsDT = $('#products').DataTable({
-        ajax: route('products.get'),
+        ajax: route('productos.get'),
         columns: [
             {
                 data: 'name'
